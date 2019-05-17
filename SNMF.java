@@ -16,7 +16,7 @@ import net.ww.rs.Users;
 import net.ww.rs.similarity.EntropyImportance;
 import net.ww.rs.similarity.PCC;
 
-public class SNMF {
+public class MCGR {
 	public  String name;
 	public Group group = new Group();
 	public  Users users = new Users();
@@ -26,7 +26,7 @@ public class SNMF {
 	public  LinkedList<Rating> predictions = new LinkedList<Rating>();
 
 	public void load(Group group, Users users, Items items, List<Rating> tasks){
-		this.name = "SNMF";
+		this.name = "MCGR";
 		for(User u:group)
 			this.group.addMember(u);
 		for(User u:users)
